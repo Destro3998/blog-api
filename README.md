@@ -29,15 +29,15 @@ docker compose up
 API: http://localhost:5050
 Metrics: http://localhost:8000/metrics
 
-![Prometheus Metrics] (pics/prometheus_metrics.png)
+![Prometheus Metrics](pics/prometheus_metrics.png)
 
 Prometheus: http://localhost:9090
 
-![Prometheus UI] (pics/prometheus_target_status.png)
+![Prometheus UI](pics/prometheus_target_status.png)
 
 Grafana: http://localhost:3000 (admin/admin - username/password)
 
-![Grafana Dashbaord] (pics/grafana_dashboard.png)
+![Grafana Dashbaord](pics/grafana_dashboard.png)
 
 ### CI/CD Pipeline
 
