@@ -1,8 +1,6 @@
-version: '3'
-
 services:
   blog-api:
-    image: destro3998/sre-blog-api:latest
+    image: blog-api:latest
     ports:
       - "5050:5000"
       - "8000:8000"
