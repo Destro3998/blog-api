@@ -2,6 +2,8 @@
 
 A comprehensive, production-ready Flask-based blog API with enterprise-grade features including monitoring, security, testing, infrastructure as code, and a beautiful modern UI dashboard.
 
+![Blog API Dashboard](pics/home_page.png)
+
 ---
 
 ## 🚀 Features
@@ -10,13 +12,11 @@ A comprehensive, production-ready Flask-based blog API with enterprise-grade fea
 - **RESTful API** with CRUD operations for posts and users
 - **SQLite Database** with proper schema and migrations
 - **Health Checks** for load balancer integration
-- **Comprehensive Error Handling** with proper HTTP status codes
-- **Input Validation** and sanitization
 - **Rate Limiting** to prevent abuse
 - **Security Headers** and CORS support
 
 ### 🎨 Modern UI Dashboard
-- **Beautiful Web Interface** with Tailwind CSS
+- **Web Interface** with Tailwind CSS
 - **Real-time Status Monitoring** with live health indicators
 - **Interactive API Testing** with one-click endpoint testing
 - **Live Response Display** showing JSON responses in real-time
@@ -172,22 +172,6 @@ curl -X POST http://localhost:5050/api/users \
 
 ---
 
-## 🧪 Testing
-
-```bash
-# Run unit tests
-python -m pytest tests/ -v
-
-# Run with coverage
-python -m pytest tests/ --cov=app --cov-report=html
-
-# Run security scans
-bandit -r app/
-safety check
-```
-
----
-
 ## 🏗 Infrastructure Deployment
 
 ### Using Terraform
@@ -215,65 +199,6 @@ kubectl apply -f k8s/
 kubectl get pods
 kubectl get services
 ```
-
----
-
-## 📊 Monitoring
-
-### Prometheus Metrics
-
-The application exposes the following metrics:
-
-- `http_requests_total`: Total HTTP requests by method and endpoint
-- `http_request_duration_seconds`: Request duration histogram
-- `active_users`: Number of active users
-- `database_connections`: Database connection count
-
-### Grafana Dashboards
-
-Pre-configured dashboards for:
-- Application performance metrics
-- Error rates and response times
-- Resource utilization
-- Business metrics
-
-### Alerting
-
-Configured alerts for:
-- High error rates
-- Slow response times
-- Service downtime
-- Resource exhaustion
-
----
-
-## 🎨 UI Features
-
-### Dashboard Components
-
-- **Status Indicators**: Real-time health monitoring with color-coded indicators
-- **Quick Action Buttons**: Interactive testing of all API endpoints
-- **Live Response Display**: Real-time JSON response visualization
-- **API Documentation**: Visual reference for all available endpoints
-- **Monitoring Integration**: Direct links to Prometheus and Grafana
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
-
-### Interactive Features
-
-- **One-Click Testing**: Test any endpoint directly from the dashboard
-- **Real-time Updates**: Status refreshes automatically every 30 seconds
-- **Error Handling**: Graceful display of API errors and responses
-- **Visual Feedback**: Color-coded status indicators and response formatting
-
-### Design Elements
-
-- **Modern UI**: Clean, professional design with Tailwind CSS
-- **Gradient Backgrounds**: Beautiful visual appeal
-- **Hover Animations**: Smooth transitions and interactions
-- **Icon Integration**: Font Awesome icons for better UX
-- **Typography**: Professional font hierarchy and spacing
-
----
 
 ## 🔒 Security Features
 
